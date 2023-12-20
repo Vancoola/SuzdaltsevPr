@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Items</title>
+</head>
+<body>
+    {% for item in items %}
+        id: {{ item.id }}
+        <br>
+    	Имя: {{ item.name }}
+        <br>
+        Описание: {{ item.description }}
+        <br>
+        Цена: {{ item.price }}
+    {% endfor %}
+
+</body>
+</html>
